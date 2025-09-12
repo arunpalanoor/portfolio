@@ -1,2 +1,2 @@
-# portfolio
-I'm a data engineer with experience across industries—building smart dashboards, automation tools, and AI-powered apps that solve real problems. This repo’s a peek into my portfolio: practical projects, open-source experiments, and a few workflow tricks I swear by.
+# My Portfolio
+This repository contains my comprehensive set of data analysis projects utilizing advanced statistical methods and AI and machine learning techniques. Includes data preprocessing, exploratory data analysis (EDA), feature engineering, and model development. Detailed documentation and visualizations provided where ever possible.
