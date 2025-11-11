@@ -480,6 +480,19 @@
       background: #37b3ed;
     }
 
+    .image-link {
+      position: relative;
+      z-index: 4; /* higher than ::before (2) and .portfolio-info/.portfolio-links (3) */
+      display: block;
+    }
+
+    .image-link img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+
     /*--------------------------------------------------------------
     # Footer
     --------------------------------------------------------------*/
@@ -529,9 +542,9 @@
         <p></p>
         <h1 class="text-light"><a href="index.html">Arun Palanoor</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <!a href="#" class="twitter"><!i class="bi bi-twitter"></i></a>
+          <!a href="#" class="facebook"><!i class="bi bi-facebook"></i></a>
+          <!a href="#" class="instagram"><!i class="bi bi-instagram"></i></a>
           <a href="https://github.com/arunpalanoor" class="github"><i class="bi bi-github"></i></a>
           <a href="https://www.linkedin.com/in/arunpalanoor" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
@@ -561,37 +574,36 @@
 
         <div class="row">
           
-          <div class="col-lg-9 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Engineering Manager | Data Analysis and Visualization | AI Accelerator</h3>
-            <p class="fst-italic">
-              Experienced in building global teams of 30+ engineers, interfacing with clients, and translating technical challenges into business solutions, with expertise in planning, operations, performance assessment, and team mentoring. 
-
-My expertise spans the full product lifecycle—from concept development to production release, cost optimization, and value engineering.
-
-My work has contributed to patented innovations, streamlined production systems, and measurable cost savings through process improvement and automation.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.linkedin.com/in/arunpalanoor</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+44 7721 699650</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>London, UK</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Technologies</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Specialization:</strong> <span>Mechanical Engineering</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>email:</strong> <span>arun.palanoor@gmail.com</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              With a passion for blending traditional engineering with emerging technologies, I integrate tools like Python, Machine learning, and GenAI to extract insights, improve workflows, and enable data-driven decision-making. I have recently strengthened this capability further through Data Science and Machine Learning Career Accelerator from <b>University of Cambridge</b>.
-
-Whether it's solving complex design problems or mentoring high-performing teams, I bring a strategic, hands-on approach rooted in continuous learning, quality thinking, and operational excellence.
-            </p>
+        <div class="col-lg-9 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <div style="height: 30px;"></div>
+        
+        <h3>Engineering Manager | Data Analysis and Visualization | AI Accelerator</h3>
+        <p class="fst-italic">
+          Experienced in building global teams of 30+ engineers, interfacing with clients, and translating technical challenges into business solutions, with expertise in planning, operations, performance assessment, and team mentoring. 
+          My expertise spans the full product lifecycle—from concept development to production release, cost optimization, and value engineering.
+          My work has contributed to patented innovations, streamlined production systems, and measurable cost savings through process improvement and automation.
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span>www.linkedin.com/in/arunpalanoor</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+44 7721 699650</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>London, UK</span></li>
+            </ul>
           </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Technologies</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Specialization:</strong> <span>Mechanical Engineering</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>email:</strong> <span>arun.palanoor@gmail.com</span></li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          With a passion for blending traditional engineering with emerging technologies, I integrate tools like Python, Machine learning, and GenAI to extract insights, improve workflows, and enable data-driven decision-making. I have recently strengthened this capability further through Data Science and Machine Learning Career Accelerator from <b>University of Cambridge</b>.
+          Whether it's solving complex design problems or mentoring high-performing teams, I bring a strategic, hands-on approach rooted in continuous learning, quality thinking, and operational excellence.
+        </p>
+      </div>
           <div class="col-lg-3" data-aos="fade-right">
             <img src="ArunPalanoorProfile.JPG" class="img-fluid" alt="">
           </div>
@@ -663,13 +675,12 @@ Whether it's solving complex design problems or mentoring high-performing teams,
           <!-- Project 1 Power BI and Power Automate for Turbine Blade Inspection-->
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <img src="kpiv-project.png" style="width:400px; height:500px;" class="img-fluid" alt="">
+              <a href="kpivDashboardProject.html" class="image-link">
+                <img src="kpiv-project.png" style="width:400px; height:500px;" class="img-fluid" alt="">
+              </a>
               <div class="portfolio-info">
                   <h4>Turbine Blade KPI Dashboard</h4>
                   <p>Yield Optimization through Real-Time Monitoring</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="kpivDashboardProject.html" title="More Details"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div>          
@@ -677,13 +688,12 @@ Whether it's solving complex design problems or mentoring high-performing teams,
           <!-- Project 2 -->
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <img src="nlp-project.png" style="width:400px; height:500px;" class="img-fluid" alt="">
+              <a href="nlpCapStoneProject.html" class="image-link">
+                <img src="nlp-project.png" alt="NLP for Regulatory Insights" style="width:400px; height:500px;" class="img-fluid">
+              </a>
               <div class="portfolio-info">
                   <h4>NLP for Regulatory Insights</h4>
                   <p>Evaluating G-SIB Communications Beyond Financial Reports</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="nlpCapStoneProject.html" title="More Details"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div>
@@ -691,29 +701,29 @@ Whether it's solving complex design problems or mentoring high-performing teams,
           <!-- Project 3 -->
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="">
+              <a href="nlpGymReviewProject.html" class="image-link">
+                <img src="nlp_gymReview.png" alt="NLP Gym Review Project" style="width:400px; height:500px;" class="img-fluid">
+              </a>
               <div class="portfolio-info">
-                  <h4>Project 3</h4>
-                  <p>Data Cleaning</p>
+                <h4>NLP-Driven Customer Feedback Analysis</h4>
+                <p>Insights from Google and Trustpilot Reviews</p>
               </div>
-              <div class="portfolio-links">
-                <a href="project-detail.html" title="More Details"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
           </div>
 
           <!-- Project 4 -->
+
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="">
               <div class="portfolio-info">
-                  <h4>Project 4</h4>
-                  <p>Statistical Analysis</p>
+                  <h4>Project 5</h4>
+                  <p>Dashboard Creation</p>
               </div>
               <div class="portfolio-links">
                 <a href="project-detail.html" title="More Details"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
+          
           </div>
           
           <!-- Project 5 -->
@@ -754,16 +764,20 @@ Whether it's solving complex design problems or mentoring high-performing teams,
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Feel free to reach out to me for any inquiries or collaboration opportunities. I'm always open to discussing new projects and ideas.</p>
+          
         </div>
 
         <div class="row">
-          <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <p>Feel free to reach out to me for any inquiries or collaboration opportunities. I'm always open to discussing new projects and ideas.</p>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Harrow, London HA1 4EF</p>
+                <p>Harrow, London</p>
               </div>
 
               <div class="email">
@@ -780,29 +794,7 @@ Whether it's solving complex design problems or mentoring high-performing teams,
             </div>
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="#" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
+          
         </div>
       </div>
     </section><!-- End Contact Section -->
