@@ -526,6 +526,11 @@
         padding-right: 20px 15px;
       }
     }
+
+    .spaced-paragraph {
+    margin-bottom: 30px; /* adjust px for more space */
+  }
+
   </style>
 </head>
 
@@ -578,24 +583,28 @@
         <div style="height: 30px;"></div>
         
         <h3>Engineering Manager | Data Analysis and Visualization | AI Accelerator</h3>
+        <div style="height: 20px;"></div>
         <p class="fst-italic">
           Experienced in building global teams of 30+ engineers, interfacing with clients, and translating technical challenges into business solutions, with expertise in planning, operations, performance assessment, and team mentoring. 
           My expertise spans the full product lifecycle—from concept development to production release, cost optimization, and value engineering.
           My work has contributed to patented innovations, streamlined production systems, and measurable cost savings through process improvement and automation.
         </p>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-4" style = "border-right: 2px solid #7f7d7d; padding-right: 20px;">
             <ul>
               <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a href = "https://www.linkedin.com/in/arunpalanoor">arunpalanoor</a></span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>email:</strong> <span>arun.palanoor@gmail.com</span></li>
               <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+44 7721 699650</span></li>
               <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>London, UK</span></li>
             </ul>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-8">
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Technologies</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Specialization:</strong> <span>Mechanical Engineering</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>email:</strong> <span>arun.palanoor@gmail.com</span></li>
+              <p style="line-height:2.0;"><b>Education</b></p>
+              <p style="line-height:0.5;"><b>University of Cambridge – Institute of Continuing Education (UK)</b></p>
+              <p class="fst-italic spaced-paragraph" style="line-height:0.5;">Data Science & Machine Learning Career Accelerator | Oct 2024 – Jul 2025</p>
+              <p style="line-height:0.5;"><b>University of Calicut (India)</b></p>
+              <p class="fst-italic" style="line-height:0.5;">Bachelor of Technology in Mechanical Engineering |2001 - 2005</p>
             </ul>
           </div>
         </div>
@@ -628,25 +637,25 @@
               <li><i class="bi bi-check-circle"></i> Python (Data science, ML and GenAI tookits)</li>
               <li><i class="bi bi-check-circle"></i> SQL </li>
               <li><i class="bi bi-check-circle"></i> DAX, Power Query</li>
-              <li><i class="bi bi-check-circle"></i> Agentic AI, Power Automate</li>
+              <li><i class="bi bi-check-circle"></i> Power Automate, Selenium</li>
             </ul>
           </div>
           <div class="col-lg-6">
-            <h3>Data Visualization, BI and AI</h3>
+            <h3>AI/BI, Data Visualization</h3>
             <ul>
-              <li><i class="bi bi-check-circle"></i> Power BI, Looker Studio</li>
-              <li><i class="bi bi-check-circle"></i> Matplotlib & Seaborn</li>
+              
               <li><i class="bi bi-check-circle"></i> Azure AI Foundry</li>
               <li><i class="bi bi-check-circle"></i> Databricks</li>
-              <li><i class="bi bi-check-circle"></i> AWS SageMaker</li>
+              <li><i class="bi bi-check-circle"></i> Power BI, Looker Studio</li>
+              <li><i class="bi bi-check-circle"></i> AWS SageMaker-(currently upskilling)</li>
             </ul>
           </div>
           <div class="col-lg-6">
             <h3>AI/ML & Analytics</h3>
             <ul>
               <li><i class="bi bi-check-circle"></i> Generative AI, Agentic AI (LangChain, OpenAI Agents SDK, Gemini ADK)</li>
-              <li><i class="bi bi-check-circle"></i> NLP pipelines, A/B Testing</li>
-              <li><i class="bi bi-check-circle"></i> Predictive Modeling, Anomaly Detection</li>
+              <li><i class="bi bi-check-circle"></i> NLP pipelines, Sentiment analysis, A/B Testing</li>
+              <li><i class="bi bi-check-circle"></i> Predictive Modeling, Anomaly Detection, Customer Segmentation</li>
               <li><i class="bi bi-check-circle"></i> Data Cleaning & Wrangling</li>
             </ul>
           </div>
@@ -676,12 +685,12 @@
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <a href="kpivDashboardProject.html" class="image-link">
-                <img src="kpiv-project.png" style="width:400px; height:500px;" class="img-fluid" alt="">
+                <img 
+                  src="kpiv-project.png" 
+                  style="width:300px; height:380px;" 
+                  title = "Turbine Blade KPI Dashboard: Yield Optimization through Real-Time Monitoring"
+                  class="img-fluid" alt="">
               </a>
-              <div class="portfolio-info">
-                  <h4>Turbine Blade KPI Dashboard</h4>
-                  <p>Yield Optimization through Real-Time Monitoring</p>
-              </div>
             </div>
           </div>          
           
@@ -689,12 +698,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <a href="nlpCapStoneProject.html" class="image-link">
-                <img src="nlp-project.png" alt="NLP for Regulatory Insights" style="width:400px; height:500px;" class="img-fluid">
+                <img 
+                  src="nlp-project.png" 
+                  alt="NLP for Regulatory Insights" 
+                  title="NLP for Regulatory Insights: Evaluating G-SIB Communications Beyond Financial Reports"
+                  style="width:300px; height:380px;" 
+                  class="img-fluid">
               </a>
-              <div class="portfolio-info">
-                  <h4>NLP for Regulatory Insights</h4>
-                  <p>Evaluating G-SIB Communications Beyond Financial Reports</p>
-              </div>
             </div>
           </div>
 
@@ -702,12 +712,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <a href="nlpGymReviewProject.html" class="image-link">
-                <img src="nlp_gymReview.png" alt="NLP Gym Review Project" style="width:400px; height:500px;" class="img-fluid">
+                <img 
+                  src="nlp_gymReview.png" 
+                  alt="NLP Gym Review Project" 
+                  title="NLP-Driven Customer Feedback Analysis: Insights from Google and Trustpilot Reviews"
+                  style="width:300px; height:380px;" 
+                  class="img-fluid">
               </a>
-              <div class="portfolio-info">
-                <h4>NLP-Driven Customer Feedback Analysis</h4>
-                <p>Insights from Google and Trustpilot Reviews</p>
-              </div>
           </div>
 
           <!-- Project 4 -->
@@ -769,32 +780,51 @@
 
         <div class="row">
           <div class="col-lg-6 d-flex align-items-stretch">
-            <p>Feel free to reach out to me for any inquiries or collaboration opportunities. I'm always open to discussing new projects and ideas.</p>
+            <p>Feel free to reach out to me for any inquiries or collaboration opportunities. I'm always open to discussing new projects and ideas.
+              I'm currently focused on architecting modular AI workflows, refining LangChain and LangServe integrations, and benchmarking RAG accuracy strategies. If you're exploring AI-powered apps, smart factory analytics, or mentoring initiatives, I'd love to connect.
+              Let’s turn ideas into prototypes—and prototypes into impact.
+            </p>
+  
           </div>
 
           <div class="col-lg-6 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Harrow, London</p>
+            <div class="info d-flex">
+              <!-- Left: Contact details -->
+              <div class="contact-details" style="flex: 1; padding-right: 15px;">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>Harrow, London</p>
+                </div>
+          
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>arun.palanoor@gmail.com</p>
+                </div>
+          
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+44 7721 699650</p>
+                </div>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>arun.palanoor@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+44 7721 699650</p>
+          
+              <!-- Right: Map -->
+              <div class="map" style="flex: 1;">
+                <iframe
+                  src="https://www.google.com/maps?q=Harrow,+London&output=embed"
+                  width="100%"
+                  height="100%"
+                  style="border:0; min-height: 200px;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
               </div>
             </div>
           </div>
-
-          
+                  
         </div>
       </div>
     </section><!-- End Contact Section -->
