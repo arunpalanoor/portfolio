@@ -260,8 +260,9 @@
     }
 
     .portfolio-details .portfolio-info ul {
-      list-style: none;
+      list-style: disc;
       padding: 0;
+      padding-left: 30px;
       font-size: 15px;
     }
 
@@ -283,6 +284,12 @@
     .portfolio-details .portfolio-description p {
       padding: 0;
     }
+
+    .skills-list {
+      list-style: disc;
+      padding-left: 30px; /* Adjust this value as needed */
+    }
+
   </style>
 
 </head>
@@ -297,8 +304,8 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>NLP-Driven Customer Feedback Analysis for a Leading UK Gym Chain</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Project Details</li>
+            <li><a href="index.html" style="color: rgb(5, 5, 56);">Home</a></li>
+            <li><a href="https://github.com/arunpalanoor/CAMS_DS_Assignments/blob/4cbed869bc79b7c362047fd1917c81b2b3de5a55/Arun_Palanoor_CAM_NLP_GYM_Customer_Review_project.ipynb" style="color: rgb(255, 255, 255);">Project Details</a></li>
           </ol>
         </div>
         <div class="d-flex justify-content-between align-items-center">
@@ -325,11 +332,8 @@
           <h3>Tools & Technologies</h3>
           <div class="row">
               <div class="col-lg-8">                
-                <li><strong>Python</strong>: PyMuPDF · OpenAI GPT-4o · Phi-4 · FinBERT · RoBERTa · RAG · OpenAI Agents SDK · LangChain · </li>
-                <li><strong>Visualization</strong>: Power BI</li>
-                <li><strong>UI</strong>: Gradio</li>
-              </div>
-              <div class="col-lg-4">                
+                <li><strong>Python</strong>: Microsoft Phi-3.5/4 · BERTopic · FuzzyWuzzy · NLTK · Torch · Gensim · </li>
+                <li><strong>Visualization</strong>: Seaborn · WordCloud </li>
                 <li><strong>Project URL</strong>: <a href="https://github.com/arunpalanoor/CAMS_DS_Assignments/blob/4cbed869bc79b7c362047fd1917c81b2b3de5a55/Arun_Palanoor_CAM_NLP_GYM_Customer_Review_project.ipynb" target="_blank">NLP for Gym</a></li>
               </div>
           </div>
@@ -340,62 +344,67 @@
           <h2>Problem Statement:</h2>
           <p>
             The gym chain faced a surge in negative reviews across platforms, impacting brand perception and loyalty. The challenge was to:
-            <li>Identify dominant themes in negative feedback</li>
-            <li>Detect emotional tone and urgency</li>
-            <li>Develop targeted strategies to enhance customer satisfaction</li>
-            <li>Improve retention rates</li>
+            <ul>
+              <li>Identify dominant themes in negative feedback</li>
+              <li>Detect emotional tone and urgency</li>
+              <li>Develop targeted strategies to enhance customer satisfaction</li>
+              <li>Improve retention rates</li>
+            </ul>
           </p>
 
           <h2>Methodology:</h2>
 
-          <h4><b>1. Data Preparation:</b></h4>
+          <h5><b>1. Data Preparation:</b></h5>
           <ul>
-            <li>- Merged and cleaned reviews from Google (23,250) and Trustpilot (16,673)</li>
-            <li>- Removed stopwords, lemmatized text, and filtered out brand-specific terms</li>
-            <li>- Applied fuzzy matching to unify location names across datasets</li>
+            <li>Merged and cleaned reviews from Google (23,250) and Trustpilot (16,673)</li>
+            <li>Removed stopwords, lemmatized text, and filtered out brand-specific terms</li>
+            <li>Applied fuzzy matching to unify location names across datasets</li>
           </ul>
           <p></p>
 
-          <h4><b>2. Exploratory Analysis:</b></h4>
+          <h5><b>2. Exploratory Analysis:</b></h5>
           <ul>
-            <li>- Word frequency and WordClouds revealed recurring terms like “equipment,” “staff,” and “cleanliness”</li>
-            <li>- Negative reviews lacked positive qualifiers, highlighting dissatisfaction</li>
+            <li>Word frequency and WordClouds revealed recurring terms like “equipment,” “staff,” and “cleanliness”</li>
+            <li>Negative reviews lacked positive qualifiers, highlighting dissatisfaction</li>
           </ul>
           <p></p>
 
-          <h4><b>3. Topic Modeling:</b></h3>
+          <h5><b>3. Topic Modeling:</b></h5>
           <ul>
-            <li>- BERTopic: Identified clusters around air conditioning, hygiene, overcrowding, and staff behavior</li>
-            <li>- Gensim LDA: Reinforced themes around equipment and facility cleanliness</li>
-            <li>- LLM (Phi 3.5 mini instruct): Generated granular topics and synthesized 10 actionable insights</li>
+            <li>BERTopic: Identified clusters around air conditioning, hygiene, overcrowding, and staff behavior</li>
+            <li>Gensim LDA: Reinforced themes around equipment and facility cleanliness</li>
+            <li>LLM (Phi 3.5 mini instruct): Generated granular topics and synthesized 10 actionable insights</li>
           </ul>
           <p></p>
 
-          <h4><b>4. Emotion Analysis:</b></h4>
+          <h5><b>4. Emotion Analysis:</b></h5>
           <ul>
-          <li>- Used Hugging Face’s BERT-based emotion classifier</li>
-          <li>- Found anger as the dominant emotion in 2,303 reviews</li>
-          <li>- Re-ran BERTopic on anger-filtered reviews to prioritize urgent issue</li>
+          <li>Used Hugging Face’s BERT-based emotion classifier</li>
+          <li>Found anger as the dominant emotion in 2,303 reviews</li>
+          <li>Re-ran BERTopic on anger-filtered reviews to prioritize urgent issue</li>
           </ul>
           <p></p>
           
-          <h4><b>5. Spatial Analysis:</b></h4>
+          <h5><b>5. Spatial Analysis:</b></h5>
           <ul>
-          <li>- Used FuzzyWuzzy for location matching</li>
-          <li>- Found 12% higher overlap between Google and Trustpilot locations</li>
-          <li>- Identified locations requiring improvement and enhanced customer statisfaction</li>
+          <li>Used FuzzyWuzzy for location matching</li>
+          <li>Found 12% higher overlap between Google and Trustpilot locations</li>
+          <li>Identified locations requiring improvement and enhanced customer statisfaction</li>
         </ul>
           <p></p>
 
           <div class="row">
-            <div class="col-lg-6">  
-              <h2><b>Skills Demonstrated:</b></h2>
-              <li>NLP pipeline design (NLTK, BERTopic, Gensim, Hugging Face)</li>
-              <li>Emotion classification and topic prioritization</li>
-              <li>LLM-based insight generation (Phi 3.5/4 mini instruct)</li>
-              <li>Data storytelling and stakeholder-focused reporting</li>
-              <li>Runtime optimization and GPU resource management</li>
+            <div class="col-lg-6">
+              <h2>Skills Demonstrated:</h2>
+              <ul>
+                <li>NLP pipeline design (NLTK, BERTopic, Gensim, Hugging Face)</li>
+                <li>Emotion classification and topic prioritization</li>
+                <li>LLM-based insight generation (Phi 3.5/4 mini instruct)</li>
+                <li>Data storytelling and stakeholder-focused reporting</li>
+                <li>Runtime optimization and GPU resource management</li>
+              </ul>
             </div>
+          
             <!-- Word Cloud Image Section -->
             <div class="col-lg-3">
               <img src="./img/nlp_WordCloud.png" class="img-fluid" alt="Google Review Word Cloud">

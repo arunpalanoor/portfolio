@@ -297,7 +297,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Turbine Blade KPI Dashboard</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" style="color: rgb(5, 5, 56);">Home</a></li>
             <li>Project Details</li>
           </ol>
         </div>
@@ -325,7 +325,9 @@
               <div class="col-lg-7">
                 <h3>Tools & Technologies</h3>                
                 <li><strong>Reporting and Visualization</strong>: Power BI · SQL · Microsoft Forms and SharePoint ·</li>
-                <li><strong>Automation</strong>: Power Automate Flow</li>                
+                <li><strong>Automation</strong>: Power Automate Flow · PowerShell </li> 
+                <li><strong>Cloud Platform</strong>: Microsoft Azure</li> 
+                <li><strong>Project Details</strong>: Confidential</li>               
                 <h3 style="margin-top:30px;">Technical Highlights</h3>  
                 <li><strong>Sensor Integration</strong>: Captured real-time data from machining stations, including coolant parameters and operator checklistst validations</li>
                 <li><strong>Data Pipeline</strong>: Unified IoT inputs with Azure Dataverse and on-premise systems for seamless KPI aggregation</li>
@@ -339,59 +341,6 @@
               </div>
           </div>
         </div>
-
-        <!-- Dashboard Image Section -->
-        <div class="portfolio-description text-center">
-          <img src="./img/nlp_dashboard.png" class="img-fluid" alt="NLP Dashboard">
-        </div>
-
-        <!-- Approach Section -->
-        <div class="portfolio-description portfolio-info">
-          <h2>Approach: Hybrid NLP Pipeline for Supervisory Insight</h2>
-          <p>
-            To address key supervisory questions, we designed a modular, end-to-end pipeline that combines domain-specific NLP tasks with agentic reasoning and retrieval-augmented generation (RAG). The solution extracts structured insights from unstructured G-SIB communications, enabling both qualitative interpretation and quantitative risk detection.
-          </p>
-
-          <h3>Key Components:</h3>
-              
-          <h5><b>Data Structuring & Extraction:</b></h5>
-          <p>Used PyMuPDF and regex for initial parsing, followed by GPT-4o-mini for structured extraction of Q&A pairs and speaker attribution. Prompt engineering ensured verbatim extraction and downstream consistency</p>
-          
-          <h5><b>NLP Task Modules:</b></h5>
-          <ul>
-          <li>Topic Modelling: Phi-4 selected for its coherent, finance-specific topic generation across 20 predefined business themes.</li>
-          <li>Sentiment & Tone Analysis: FinBERT and GPT-4o-mini assessed sentiment polarity and tonal nuance across analyst interactions.</li>
-          <li>Answer Avoidance Detection: Phi-4 multimodal model identified evasive responses using synthetic examples and prompt-based generalization.</li>
-          <li>Mismatch Identification: Combined RAG and RoBERTa-MNLI to detect inconsistencies between transcripts and official disclosures.</li>
-          <li>Metric Summarisation: RAG pipeline extracted and visualized key financial indicators (e.g., CET1, EPS, LCR) for trend analysis.</li>
-          </ul>
-          <p></p>
-          <h5><b>Agentic Architecture:</b></h5>
-          <p>Deployed four specialized agents (Admin, Market Research, Analyst EWI, Root) to route queries, synthesize insights, and populate a traffic-light Early Warning Indicator (EWI) dashboard.</p>
-          <h5><b>End-User Products:</b></h5>
-          <li>Power BI Dashboard: Interactive visuals track sentiment, topic volatility, avoidance, and financial metrics across time and institutions.</li>
-          <li>Earnings Transcript Chatbot: GPT-powered interface enables contextual Q&A exploration, backed by RAG and agentic routing.</li>
-        </div>
-
-
-
-        <div class="portfolio-description">
-          <h2>Technical Outcomes and Next Steps</h2>
-          <p>
-            This project validated the use of advanced NLP and agent-based architectures to transform unstructured financial communications into structured, actionable insights. The Early Warning Indicator (EWI) framework introduced a novel lens for assessing earnings performance, enabling detection of risk-prone quarters, sentiment misalignment, and shifts in investor focus.
-            By integrating domain-specific models with generative AI in a scalable, interactive interface, the solution enhances supervisory speed and interpretability. Initial results from JPMorgan and UBS show strong signal potential, with future improvements needed in retrieval accuracy, discrepancy detection, and trend generalization.
-            This hybrid approach establishes a robust foundation for real-time, AI-driven monitoring of systemic financial communication risk across institutions.
-          </p>
-          <h5>Future possible enhancements</h5>
-              <li>Automated quarterly activation pipeline triggered by earnings release</li>
-              <li>Migration to LangChain for advanced agentic logic</li>
-              <li>Multi-source RAG collections for improved retrieval precision</li>
-              <li>Named Entity Recognition (NER) agent for contextual accuracy</li>
-              <li>Longitudinal NLP trend detection for predictive insights</li>
-              <li>Scalability to more G-SIBs and regional banks</li>
-
-        </div>
-
       </div>
     </section><!-- End Portfolio Details Section -->
 
