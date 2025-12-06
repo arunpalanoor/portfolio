@@ -66,9 +66,25 @@
       transition: all 0.5s;
       padding: 0 15px;
       background: #00202c; /*-- Side bar color */
+      background-image: url(SideBarBG.png);
+      background-size: cover;
+      background-position: center;
       overflow-y: auto;
     }
 
+    #header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5); /* semi-transparent overlay */
+      z-index: 0;
+    }
+
+    #header .d-flex {
+      position: relative;
+      z-index: 1; /* keeps content above overlay */
+    }
+    
     #header .profile img {
       margin: 15px auto;
       display: block;
@@ -679,6 +695,7 @@
           <h2>Portfolio</h2>
           <p>Dive in to explore my work across smart factory solutions, data analytics, and automation. Each project reflects a commitment to operational excellence, rapid prototyping, and scalable impact—whether it's transforming manufacturing workflows, building intuitive dashboards, or crafting open-source tools for broader communities.</p>
         </div>
+        <div style="height: 20px;"></div>
         <div class="row portfolio-container">
 
           <!-- Project 1 Power BI and Power Automate for Turbine Blade Inspection-->
@@ -687,7 +704,7 @@
               <a href="kpivDashboardProject.html" class="image-link">
                 <img 
                   src="kpiv-project.png" 
-                  style="width:300px; height:380px;" 
+                  style="width:300px; height:400px;" 
                   title = "Turbine Blade KPI Dashboard: Yield Optimization through Real-Time Monitoring"
                   class="img-fluid" alt="">
               </a>
@@ -702,7 +719,7 @@
                   src="nlp-project.png" 
                   alt="NLP for Regulatory Insights" 
                   title="NLP for Regulatory Insights: Evaluating G-SIB Communications Beyond Financial Reports"
-                  style="width:300px; height:380px;" 
+                  style="width:300px; height:400px;" 
                   class="img-fluid">
               </a>
             </div>
@@ -716,7 +733,7 @@
                   src="nlp_gymReview.png" 
                   alt="NLP Gym Review Project" 
                   title="NLP-Driven Customer Feedback Analysis: Insights from Google and Trustpilot Reviews"
-                  style="width:300px; height:380px;" 
+                  style="width:300px; height:400px;" 
                   class="img-fluid">
               </a>
           </div>
